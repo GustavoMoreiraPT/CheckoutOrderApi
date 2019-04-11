@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/CheckoutOrderApi/.vs/CheckoutOrderApi
+/CheckoutOrderApi/Application.Dto/obj
+/CheckoutOrderApi/Application.Services/obj
+/CheckoutOrderApi/CheckoutOrderApi/obj
+/CheckoutOrderApi/Data.Reposiotry/obj
+/CheckoutOrderApi/Domain.Core/obj
+/CheckoutOrderApi/Domain.Model/obj
+/CheckoutOrderApi/Infrastructure.CrossCutting/obj
