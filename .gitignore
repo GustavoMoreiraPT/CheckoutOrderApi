@@ -10,3 +10,10 @@
 /CheckoutOrderApi/Domain.Core/obj
 /CheckoutOrderApi/Domain.Model/obj
 /CheckoutOrderApi/Infrastructure.CrossCutting/obj
+/CheckoutOrderApi/Application.Dto/bin/Debug/netcoreapp2.2
+/CheckoutOrderApi/Application.Services/bin/Debug/netcoreapp2.2
+/CheckoutOrderApi/CheckoutOrderApi/bin/Debug/netcoreapp2.2
+/CheckoutOrderApi/Data.Reposiotry/bin/Debug/netcoreapp2.2
+/CheckoutOrderApi/Domain.Core/bin/Debug/netcoreapp2.2
+/CheckoutOrderApi/Domain.Model/bin/Debug/netcoreapp2.2
+/CheckoutOrderApi/Infrastructure.CrossCutting/bin/Debug/netcoreapp2.2
