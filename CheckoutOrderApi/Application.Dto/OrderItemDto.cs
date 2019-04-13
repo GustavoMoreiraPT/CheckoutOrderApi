@@ -1,8 +1,10 @@
-﻿namespace Application.Dto
+﻿using System;
+
+namespace Application.Dto
 {
     public class OrderItemDto
     {
-        public int ItemId { get; set; }
+        public Guid ItemId { get; set; }
 
         public string ItemName { get; set; }
 

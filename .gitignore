@@ -17,3 +17,6 @@
 /CheckoutOrderApi/Domain.Core/bin/Debug/netcoreapp2.2
 /CheckoutOrderApi/Domain.Model/bin/Debug/netcoreapp2.2
 /CheckoutOrderApi/Infrastructure.CrossCutting/bin/Debug/netcoreapp2.2
+/.vs
+/CheckoutOrderApi/.vs/config
+/CheckoutOrderApi/CheckoutOrderApi/CheckoutOrderApi.csproj.user

@@ -51,6 +51,24 @@ namespace CheckoutOrderApi.Controllers
             return this.Ok(order);
         }
 
+        [HttpGet]
+        [Route("{id}/items")]
+        [ProducesResponseType(typeof(OrderDto), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public IActionResult GetOrderItems([FromRoute] Guid id, [FromQuery] Guid customerId)
+        {
+            if (id == Guid.Empty || customerId == Guid.Empty)
+            {
+                return this.BadRequest();
+            }
+
+            var items = this.ordersService.GetOrderItems(id, customerId);
+
+            return this.Ok(items);
+        }
+
         [HttpPut]
         [Route("{id}")]
         [ProducesResponseType(typeof(OrderDto), StatusCodes.Status200OK)]
@@ -87,7 +105,14 @@ namespace CheckoutOrderApi.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public IActionResult Delete([FromRoute] Guid id, [FromQuery] Guid customerId)
         {
-       
+            if (id == Guid.Empty || customerId == Guid.Empty)
+            {
+                return this.BadRequest();
+            }
+
+            this.ordersService.Delete(id, customerId);
+
+            return this.NoContent();
         }
 
         [HttpPost]
@@ -108,7 +133,7 @@ namespace CheckoutOrderApi.Controllers
 
             if (order.Id == Guid.Empty)
             {
-                order.Id = new Guid();
+                order.Id = Guid.NewGuid();
             }
 
             this.ordersService.Create(order);

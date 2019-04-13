@@ -7,7 +7,7 @@ namespace Domain.Model
     {
         public Guid Id { get; set; }
 
-        public int CustomerId { get; set; }
+        public Guid CustomerId { get; set; }
 
         public DateTime DateCreated { get; set; }
 

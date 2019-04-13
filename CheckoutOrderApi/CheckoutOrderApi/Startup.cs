@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Application.Services.Configuration;
+using CheckoutOrderApi.Middlewares;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -57,6 +58,7 @@ namespace CheckoutOrderApi
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Checkout Order API");
             });
 
+            app.ConfigureExceptionHandler();
             app.UseHttpsRedirection();
             app.UseMvc();
         }

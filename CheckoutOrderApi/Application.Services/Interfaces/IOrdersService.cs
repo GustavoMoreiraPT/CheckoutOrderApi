@@ -8,12 +8,14 @@ namespace Application.Services.Interfaces
     {
         List<OrderDto> GetAll(Guid customerId);
 
+        List<ItemDto> GetOrderItems(Guid orderId, Guid customerId);
+
         OrderDto GetById(Guid orderId, Guid customerId);
 
         void Create(OrderDto order);
 
         void Update(OrderDto order);
 
-        void Delete(OrderDto order);
+        void Delete(Guid orderId, Guid customerId);
     }
 }
