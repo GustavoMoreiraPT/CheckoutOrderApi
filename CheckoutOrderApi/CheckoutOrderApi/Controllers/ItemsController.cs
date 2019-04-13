@@ -16,6 +16,9 @@ namespace CheckoutOrderApi.Controllers
             this.itemsService = itemsService;
         }
 
+        /// <summary>
+        /// Gets all the available products to be used in orders.
+        /// </summary>
         [HttpGet]
         [ProducesResponseType(typeof(List<ItemDto>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]

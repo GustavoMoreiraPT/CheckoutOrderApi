@@ -17,6 +17,9 @@ namespace CheckoutOrderApi.Controllers
             this.ordersService = ordersService;
         }
 
+        /// <summary>
+        /// Gets all the available orders for a specific customer.
+        /// </summary>
         [HttpGet]
         [ProducesResponseType(typeof(List<OrderDto>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -33,6 +36,9 @@ namespace CheckoutOrderApi.Controllers
             return this.Ok(orders);
         }
 
+        /// <summary>
+        /// Retrieve of a specific detailed order for a specific customer.
+        /// </summary>
         [HttpGet]
         [Route("{id}")]
         [ProducesResponseType(typeof(OrderDto), StatusCodes.Status200OK)]
@@ -51,6 +57,9 @@ namespace CheckoutOrderApi.Controllers
             return this.Ok(order);
         }
 
+        /// <summary>
+        /// Gets all different items from an order.
+        /// </summary>
         [HttpGet]
         [Route("{id}/items")]
         [ProducesResponseType(typeof(OrderDto), StatusCodes.Status200OK)]
@@ -69,6 +78,9 @@ namespace CheckoutOrderApi.Controllers
             return this.Ok(items);
         }
 
+        /// <summary>
+        /// Update an existing order for a specific customer.
+        /// </summary>
         [HttpPut]
         [Route("{id}")]
         [ProducesResponseType(typeof(OrderDto), StatusCodes.Status200OK)]
@@ -97,6 +109,9 @@ namespace CheckoutOrderApi.Controllers
             return this.Ok();
         }
 
+        /// <summary>
+        /// Deletes an existing order for a specific customer.
+        /// </summary>
         [HttpDelete]
         [Route("{id}")]
         [ProducesResponseType(typeof(OrderDto), StatusCodes.Status204NoContent)]
@@ -115,6 +130,9 @@ namespace CheckoutOrderApi.Controllers
             return this.NoContent();
         }
 
+        /// <summary>
+        /// Creates a specific detailed order for a specific customer.
+        /// </summary>
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
