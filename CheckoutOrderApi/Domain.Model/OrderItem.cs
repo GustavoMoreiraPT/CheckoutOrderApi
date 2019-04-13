@@ -1,8 +1,10 @@
-﻿namespace Domain.Model
+﻿using System;
+
+namespace Domain.Model
 {
-    public class OrderItem
+    public class OrderItem : IEntity
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
 
         public int ItemId { get; set; }
 

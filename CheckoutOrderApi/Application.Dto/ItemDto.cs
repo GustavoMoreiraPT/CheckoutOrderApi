@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Domain.Model
+namespace Application.Dto
 {
-    public class Item : IEntity
+    public class ItemDto
     {
         public Guid Id { get; set; }
 

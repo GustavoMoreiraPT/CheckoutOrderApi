@@ -7,16 +7,18 @@ namespace Domain.Core
 {
     public interface IRepository<TEntity> where TEntity : IEntity
     {
-        Task CreateAsync(TEntity entity);
+        void Create(TEntity entity);
 
-        Task DeleteAsync(TEntity entity);
+        void Delete(TEntity entity);
 
-        Task DeleteAsync(Guid id);
+        void Delete(Guid id);
 
-        Task EditAsync(TEntity entity);
+        void Edit(TEntity entity);
 
-        Task<TEntity> GetByIdAsync(Guid id);
+        TEntity GetById(Guid id);
 
-        Task SaveChangesAsync();
+        List<TEntity> GetAll();
+
+        void SaveChanges();
     }
 }
