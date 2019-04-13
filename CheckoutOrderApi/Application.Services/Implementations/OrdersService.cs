@@ -85,6 +85,8 @@ namespace Application.Services.Implementations
             }
 
             this.unitOfWork.OrderRepository.Delete(order);
+
+            this.unitOfWork.Save();
         }
 
         public void Update(OrderDto order)
