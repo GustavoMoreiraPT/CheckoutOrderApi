@@ -20,3 +20,5 @@
 /.vs
 /CheckoutOrderApi/.vs/config
 /CheckoutOrderApi/CheckoutOrderApi/CheckoutOrderApi.csproj.user
+/CheckoutOrderApi/Application.Services.Tests/bin/Debug/netcoreapp2.2
+/CheckoutOrderApi/Application.Services.Tests/obj
