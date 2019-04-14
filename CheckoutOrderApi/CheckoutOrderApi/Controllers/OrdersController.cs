@@ -20,6 +20,7 @@ namespace CheckoutOrderApi.Controllers
         /// <summary>
         /// Gets all the available orders for a specific customer.
         /// </summary>
+        /// <param name="customerId">The unique identifier of the customer. Used as a query parameter.</param>
         [HttpGet]
         [ProducesResponseType(typeof(List<OrderDto>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -39,6 +40,8 @@ namespace CheckoutOrderApi.Controllers
         /// <summary>
         /// Retrieve of a specific detailed order for a specific customer.
         /// </summary>
+        /// <param name="id">The unique identifier of the order. Used as path of the request.</param>
+        /// <param name="customerId">The unique identifier of the customer. Used as a query parameter.</param>
         [HttpGet]
         [Route("{id}")]
         [ProducesResponseType(typeof(OrderDto), StatusCodes.Status200OK)]
@@ -60,6 +63,8 @@ namespace CheckoutOrderApi.Controllers
         /// <summary>
         /// Gets all different items from an order.
         /// </summary>
+        /// <param name="id">The unique identifier of the order. Used as path of the request.</param>
+        /// <param name="customerId">The unique identifier of the customer. Used as a query parameter.</param>
         [HttpGet]
         [Route("{id}/items")]
         [ProducesResponseType(typeof(OrderDto), StatusCodes.Status200OK)]
@@ -81,6 +86,8 @@ namespace CheckoutOrderApi.Controllers
         /// <summary>
         /// Update an existing order for a specific customer.
         /// </summary>
+        /// <param name="id">The unique identifier of the order to update. Used as path of the request.</param>
+        /// <param name="order">The body of the order to be updated. Should contain the entire object to be updated.</param>
         [HttpPut]
         [Route("{id}")]
         [ProducesResponseType(typeof(OrderDto), StatusCodes.Status200OK)]
@@ -112,6 +119,8 @@ namespace CheckoutOrderApi.Controllers
         /// <summary>
         /// Deletes an existing order for a specific customer.
         /// </summary>
+        /// <param name="id">The unique identifier of the order to delete. Used as path of the request.</param>
+        /// <param name="customerId">The unique identifier of the customer. Used as a query parameter.</param>
         [HttpDelete]
         [Route("{id}")]
         [ProducesResponseType(typeof(OrderDto), StatusCodes.Status204NoContent)]
@@ -133,6 +142,7 @@ namespace CheckoutOrderApi.Controllers
         /// <summary>
         /// Creates a specific detailed order for a specific customer.
         /// </summary>
+        /// <param name="order">The body of the order to update.</param>
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
