@@ -7,7 +7,7 @@ Customer - Composed by Id, email and password. An order is always associated to 
 Items - The items that can be used inside of an order. An item is composed by: Name, Category, Id and Price.
 Order - The actual order that a costumer can create, update, read and delete. 
 
-For this demo, 2 costumers have been added by default, which should be used in order to create new orders (By default, there is no way
+For this demo, 2 customers have been added by default, which should be used in order to create new orders (By default, there is no way
 to add new customers unless we manually changed the code.)
 Note: the email and password are there just to add additional information and to look real, because they will never be used (For now).
 
