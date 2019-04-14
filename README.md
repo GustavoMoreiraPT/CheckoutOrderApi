@@ -20,3 +20,26 @@ Customer number 2:
 Id = eed9980b-f90c-47fb-8c2f-9708b0ec636c
 Email = "avicii@sweden.com",
 Password = "SOS"
+
+There are also 3 items that can be consulted from the items endpoint:
+
+Item number 1:
+
+Id = 14ad7315-dd47-462c-ae05-925289420250"
+Name = "Ultra Music Festival",
+Category = "Eletronic Dance Music",
+Price = 299
+
+Item number 2:
+
+Id = 89d6f5bf-48d5-47bf-863f-f8b99f78d4c7
+Name = "Tomorrowland",
+Category = "Eletronic Dance Music",
+Price = 699
+
+Item number 3:
+
+Id = bd88ce04-6e43-479e-a39c-2d95b77aa97f
+Name = "Creamfields London",
+Category = "Eletronic Dance Music",
+Price = 99
