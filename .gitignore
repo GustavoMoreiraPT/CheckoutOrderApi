@@ -22,3 +22,13 @@
 /CheckoutOrderApi/CheckoutOrderApi/CheckoutOrderApi.csproj.user
 /CheckoutOrderApi/Application.Services.Tests/bin/Debug/netcoreapp2.2
 /CheckoutOrderApi/Application.Services.Tests/obj
+/CheckoutOrderApi/CheckoutOrderAPI.Client/obj
+/CheckoutOrderApi/Application.Dto/bin/Release/netcoreapp2.2
+/CheckoutOrderApi/Application.Services/bin/Release/netcoreapp2.2
+/CheckoutOrderApi/CheckoutOrderApi/bin/Release/netcoreapp2.2
+/CheckoutOrderApi/Data.Reposiotry/bin/Release/netcoreapp2.2
+/CheckoutOrderApi/Domain.Core/bin/Release/netcoreapp2.2
+/CheckoutOrderApi/Domain.Model/bin/Release/netcoreapp2.2
+/CheckoutOrderApi/Infrastructure.CrossCutting/bin/Release/netcoreapp2.2
+/CheckoutOrderApi/CheckoutOrderApi/Properties/PublishProfiles
+/CheckoutOrderApi/CheckoutOrderAPI.Client/bin/Debug/netcoreapp2.2

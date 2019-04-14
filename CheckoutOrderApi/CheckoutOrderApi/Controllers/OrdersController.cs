@@ -137,7 +137,7 @@ namespace CheckoutOrderApi.Controllers
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public IActionResult CreatE([FromBody]OrderDto order)
+        public IActionResult Create([FromBody]OrderDto order)
         {
             if (order == null)
             {
@@ -156,7 +156,7 @@ namespace CheckoutOrderApi.Controllers
 
             this.ordersService.Create(order);
 
-            return this.Created(string.Empty, order.Id);
+            return this.Created($"https://localhost:44392/v1/orders/{order.Id}", order.Id);
         }
     }
 }
