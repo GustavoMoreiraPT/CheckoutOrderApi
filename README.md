@@ -1,5 +1,7 @@
 # CheckoutOrderApi
 
+When launching the project from Visual Studio, the initial page will be: https://localhost:44392/swagger
+
 The starting page contains additional information on how to use the endpoints. Each endpoint has a short description for it's purpose, and each parameter also contains an explanation.
 
 For the purpose of this prototype, there are 3 main entities to have in consideration:
